@@ -5,297 +5,257 @@
 	<title> Writers Probe</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="theme-color" content="#ffffff">
+	<meta name="theme-color" content="#fff">
 	<link rel="shortcut icon" type="image/jpg" href="https://res.cloudinary.com/fematic/image/upload/v1558953561/1.jpg">
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
-	<!-- <link href="lib/blk/nucleo-icons.css" rel="stylesheet">
-	<link href="lib/iziModal/iziModal.min.css" rel="stylesheet"> -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
 
 	<style type="text/css">
 		
 
-/*initials*/
-html,body{
-	height: 100%;
-	width: 100%;
-	touch-action: manipulation;
-	font-family: cursive;;
-	font-size: 1rem;
-	color: #000;
-}
-/*@include media-breakpoint-up(sm) {
-	html {
-		font-size: 1.2rem;
-	}
-}
-
-@include media-breakpoint-up(md) {
-	html {
-		font-size: 2.4rem;
-	}
-}
-
-@include media-breakpoint-up(lg) {
-	html {
-		font-size: 1.6rem;
-	}
-}*/
-article, aside, figcaption, figure, footer, header, main, nav, section {display: block;}
-body{
-	background-color: #43c6ac;
-	background: -webkit-linear-gradient(to left, #43c6ac, #f8ffae );
-	background: linear-gradient(to left, #43c6ac, #f8ffae );
-}
-h2{
-	font-size: 1.5rem;
-}
-h3{
-	font-size: 1.2rem;
-}
-h4{
-	font-size: 1rem;
-}
+		/*initials*/
+		html,body{
+			height: 100%;
+			width: 100%;
+			touch-action: manipulation;
+			font-family: cursive;;
+			font-size: 1rem;
+			color: #000;
+		}
+		article, aside, figcaption, figure, footer, header, main, nav, section {display: block;}
+		body{
+			background-color: #43c6ac;
+			background: -webkit-linear-gradient(to left, #43c6ac, #f8ffae );
+			background: linear-gradient(to left, #43c6ac, #f8ffae );
+		}
+		h2{
+			font-size: 1.5rem;
+		}
+		h3{
+			font-size: 1.2rem;
+		}
+		h4{
+			font-size: 1rem;
+		}
 
 
+		/*navigation*/
+		nav{
+			font-size: .76rem;
+		}
+		nav .dropdown-menu a {
+			font-size: .7rem !important; 
+		}
+		.nav-item input{
+			font-size: .7rem;
+		}
+		.nav-item .btn{
+			font-size: .7rem;
+			padding: .4rem; 
+		}
+		#nav-avatar{
+			width: 1.9rem;
+		}
+		.headroom {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 10;
+			transition: all .5s ease-in-out;
+		}
+		.headroom--unpinned {
+			top: -100%;
+		}
+		.headroom--pinned {
+			top: 0;
+		}
 
 
-/*navigation*/
-nav{
-	font-size: .76rem;
-}
-nav .dropdown-menu a {
-	font-size: .7rem !important; 
-}
-.nav-item input{
-	font-size: .7rem;
-}
-.nav-item .btn{
-	font-size: .7rem;
-	padding: .4rem; 
-}
-#nav-avatar{
-	width: 1.9rem;
-}
-.headroom {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 10;
-	transition: all .4s ease-in-out;
-}
-.headroom--unpinned {
-	top: -100%;
-}
-.headroom--pinned {
-	top: 0;
-}
-
-
-
-
-/*carousel*/
-.carousel{
-	padding: .8rem;
-	padding-top: 4.5rem;
-	font-size: .8rem;
-}
-.carousel-caption {
-	top: 50%;
-	bottom: initial;
-	transform: translateY(-50%);
-	background-color: rgba(0,0,0,0.6);
-	z-index: 2;
-}
-.carousel-caption h2{
-	text-shadow: 2px 2px 15px #000;
-	font-size: 2rem;
-}
-.carousel-caption p{
-	text-shadow: 2px 2px 10px #000;
-	font-size: 1rem
-}
-.carousel-caption button{
-	font-size: 1.5rem
-}
-.carousel-item img {
-	width: 100%;
-	height: 100%;
-	-webkit-filter: brightness(95%);
-    filter: brightness(95%);
-    -moz-filter: brightness(95%);
-    -o-filter: brightness(95%);
-    -ms-filter: brightness(95%);
-}
+		/*carousel*/
+		.carousel{
+			padding: .8rem;
+			padding-top: 4.5rem;
+			font-size: .8rem;
+		}
+		.carousel-caption {
+			top: 50%;
+			bottom: initial;
+			transform: translateY(-50%);
+			background-color: rgba(0,0,0,0.6);
+			z-index: 2;
+		}
+		.carousel-caption h2{
+			text-shadow: 2px 2px 15px #000;
+			font-size: 2rem;
+		}
+		.carousel-caption p{
+			text-shadow: 2px 2px 10px #000;
+			font-size: 1rem
+		}
+		.carousel-caption button{
+			font-size: 1.5rem
+		}
+		.carousel-item img {
+			width: 100%;
+			height: 100%;
+			-webkit-filter: brightness(95%);
+		    filter: brightness(95%);
+		    -moz-filter: brightness(95%);
+		    -o-filter: brightness(95%);
+		    -ms-filter: brightness(95%);
+		}
 
 
 
+		#search-bar,#footer-search{
+			position: relative;
+		}
+		#search-bar:hover {
+			transform: scale(1.05);
+		}
+		#search-bar input, #footer-search input{
+			border-color: #27323b;
+			background-color: transparent;
+			padding-left: .6rem;
+			padding-right: 1.8rem;
+			width: 100%;
+		}
+		#search-bar button, #footer-search button{
+			color: #27323b;
+			position: absolute;
+			background-color: transparent; 
+			border: none;
+			padding: .3rem;
+			right: 0;	
+		}
+		#search-bar button:hover, #footer-search button:hover{
+			transform: scale(1.15);
+		}	
 
 
-#search-bar,#footer-search{
-	position: relative;
-}
-#search-bar:hover {
-	transform: scale(1.05);
-}
-#search-bar input, #footer-search input{
-	border-color: #27323b;
-	background-color: transparent;
-	padding-left: .6rem;
-	padding-right: 1.8rem;
-	width: 100%;
-}
-#search-bar button, #footer-search button{
-	color: #27323b;
-	position: absolute;
-	background-color: transparent; 
-	border: none;
-	padding: .3rem;
-	right: 0;	
-}
-#search-bar button:hover, #footer-search button:hover{
-	transform: scale(1.15);
-}	
+		.card{
+			border: none;
+			font-size: 90%;
+			background-color: transparent;
+		}
+		.card:hover{
+			transform: scale(1.05);
+		}
+		.card a:hover {
+			font-weight: bold;
+			text-decoration: none;
+		}
+		.card image{
+			position: relative;
+		}
+		.card button{
+			position: absolute;
+			background-color: rgba(0,0,0,0.8);  
+			padding: .12rem;
+			left: .24rem;	
+			top: .24rem;
+		}
+		.card h4{
+			font-size: .85rem;
+		}
+		.card small{
+			font-size: .6rem;
+		}
 
 
+		.genre a, .genre p, .genre h5, h5{
+			font-size: .7rem;
+		}
 
 
+		footer p {
+			/*font-size: .7rem;*/
+		}
+		footer {
+			font-size: .7rem;
+		}
+		footer a:hover {
+			font-weight: bold;
+			text-decoration: none;
+		}
+		/*#form2, #form3{
+			font-size: .5rem;
+		}
+		footer .form-group label{
+			font-size: .5rem;
+		}*/
 
-.card{
-	border: none;
-	font-size: 90%;
-	background-color: transparent;
-}
-.card:hover{
-	transform: scale(1.05);
-}
-.card a:hover {
-	font-weight: bold;
-	text-decoration: none;
-}
-.card image{
-	position: relative;
-}
-.card button{
-	position: absolute;
-	background-color: rgba(0,0,0,0.8);  
-	padding: .12rem;
-	left: .24rem;	
-	top: .24rem;
-}
-.card h4{
-	font-size: .85rem;
-}
-.card small{
-	font-size: .6rem;
-}
+		#footer-search button i {
+			font-size: 1.3rem;
+		}
+		.social{
+			font-size: 1.5rem;
+			margin: .8rem;
+		}
 
 
+		/*-----Media Queries-----*/
+		@media (max-width: 992px) {
+
+		}
 
 
+		@media (max-width: 768px) {
+
+			.carousel-caption h2{
+				font-size: 1.2rem;
+			}
+			.carousel-caption p{
+				font-size: .8rem
+			}
+			.carousel-caption .btn{
+				font-size: 1rem
+			}
+
+		}
 
 
-.genre a, .genre p, .genre h5, h5{
-	font-size: .7rem;
-}
+		@media (max-width: 576px) {
+
+			.carousel-caption h2{
+				font-size: 1rem;
+			}
+			.carousel-caption p{
+				font-size: .7rem
+			}
+			.carousel-caption .btn{
+				font-size: .7rem
+			}
+			.card small{
+				font-size: .65rem;
+			}
+
+		}
 
 
+		@media (max-width: 320px) {
 
+			.carousel-caption h2{
+				font-size: .8rem;
+			}
+			.carousel-caption p{
+				font-size: .6rem
+			}
+			.carousel-caption .btn{
+				font-size: .6rem
+			}
+			.genre a, .genre p, .genre h5{
+				font-size: .6rem;
+			}
+			.card small{
+				font-size: .65rem;
+			}
 
-
-
-
-footer p {
-	/*font-size: .7rem;*/
-}
-footer {
-	font-size: .7rem;
-}
-footer a:hover {
-	font-weight: bold;
-	text-decoration: none;
-}
-/*#form2, #form3{
-	font-size: .5rem;
-}
-footer .form-group label{
-	font-size: .5rem;
-}*/
-
-#footer-search button i {
-	font-size: 1.3rem;
-}
-.social{
-	font-size: 1.5rem;
-	margin: .8rem;
-}
-
-
-
-
-
-/*-----Media Queries-----*/
-@media (max-width: 992px) {
-
-}
-
-
-@media (max-width: 768px) {
-
-	.carousel-caption h2{
-		font-size: 1.2rem;
-	}
-	.carousel-caption p{
-		font-size: .8rem
-	}
-	.carousel-caption .btn{
-		font-size: 1rem
-	}
-
-}
-
-
-@media (max-width: 576px) {
-
-	.carousel-caption h2{
-		font-size: 1rem;
-	}
-	.carousel-caption p{
-		font-size: .7rem
-	}
-	.carousel-caption .btn{
-		font-size: .7rem
-	}
-	.card small{
-		font-size: .65rem;
-	}
-
-}
-
-
-@media (max-width: 320px) {
-
-	.carousel-caption h2{
-		font-size: .8rem;
-	}
-	.carousel-caption p{
-		font-size: .6rem
-	}
-	.carousel-caption .btn{
-		font-size: .6rem
-	}
-	.genre a, .genre p, .genre h5{
-		font-size: .6rem;
-	}
-	.card small{
-		font-size: .65rem;
-	}
-
-}
+		}
 
 	</style>
 </head>
@@ -427,7 +387,7 @@ footer .form-group label{
 		<div class="carousel-item active">
 			<img class="d-block img-fluid" src="https://res.cloudinary.com/fematic/image/upload/v1558953639/5.jpg">
 			<div class="carousel-caption d-block">
-				<h2> Welcome to Writer's Probe </h2>
+				<h2> Welcome to Writer's Prob </h2>
 				<p><i> Your story starts here... </i></p>
 				<button type="button" class="btn btn-outline-default btn-rounded waves-effect btn-lg"> Join the Community! </button>
 			</div>
@@ -1036,8 +996,8 @@ footer .form-group label{
 
 <footer class="shadow-lg bg-white">
 	<div class="row text-center text-dark pt-4 mx-auto">
-		<a class="mx-auto m-4" href="#carousel-example-generic" data-toggle="tooltip" title="Go to the top of this page">
-       		<!-- <span class="fab fa-facebook social"></span> -->GO UP!
+		<a class="mx-auto m-4" href="#carousel" data-toggle="tooltip" title="Go to the top of this page">
+       		GO UP!
      	</a>
 
 		<div class="col-lg-12 text-success pb-4">
@@ -1124,45 +1084,17 @@ footer .form-group label{
   	crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-	<script src="lib/gradientify/gradientify.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js"></script>
+	<script src="https://codefog.github.io/jquery-gradientify/jquery.gradientify.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js"></script>
+	<script src="https://unpkg.com/headroom.js@0.9.4/dist/headroom.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/js/mdb.min.j" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/js/mdb.min.js" type="text/javascript"></script>
 	<script type="text/javascript">
 
-	//linkinfy on show page	
-	$(document).ready(function () {
-		$('p.linkify').linkify({
-                formatHref:{
-                    hashtag:function hashtag(val){
-                        // return 'https://fb.com/' + val.substr(1)
-                        return '/campgrounds?search=' + val.substr(1)
-                    },
-                    mention: function mention(val){
-                        return '/campgrounds?search=' + val.substr(1)
-                    }
-                },
-                // validate: {
-                //     url: function url(val){
-                //         return(/^https?:\/\//.test(val)
-                //         ); // only allow urls that begin with protocols
-                //     },
-                //     email : true// false is dont linkify emails
-                // } 
-            });
-	});
-
-	//Bootstrap Tooltip
-	$(document).ready(function(){
-	    $('[data-toggle="tooltip"]').tooltip();
-	});
-	
 	// gradientify
     $(document).ready(function() {
         $("body").gradientify({
             gradients: [
-
                 { start: [67,198,172], stop: [248,255,174] },
                 { start: [248,255,174], stop: [67,198,172] },
                 { start: [248,255,174], stop: [248,255,174] },
@@ -1229,62 +1161,8 @@ footer .form-group label{
 
     // bootstrap carousel speed
     $(".carousel").carousel({
-        interval: 7000
+        interval: 6000
     });
-
-
-
-    // iziModal
-
-    	//default
-		$(document).on('click', '.open-default', function(event) {
-		  event.preventDefault();
-		  $('#modal-default').iziModal('open');
-		});
-		$('#modal-default').iziModal();
-
-		//options
-		$(document).on('click', '.open-options', function(event) {
-		  event.preventDefault();
-		  $('#modal-options').iziModal('open');
-		});
-		$('#modal-options').iziModal({
-		  headerColor: '#43c6ac',
-		  width: '90%',
-		  overlayColor: 'rgba(0, 0, 0, 0.5)',
-		  fullscreen: true,
-		  transitionIn: 'fadeInUp',
-		  transitionOut: 'fadeOutDown'
-		});
-
-		//iframe
-		$(document).on('click', '.open-iframe', function(event) {
-		  event.preventDefault();
-		  $('#modal-iframe').iziModal('open', this);
-		});
-		$('#modal-iframe').iziModal({
-		  //width:400,
-		  iframe: true, 
-		  iframeWidth:400,
-		  iframeHeight: 300,
-		  iframeURL: 'https://codepen.io/'
-		});
-
-		//alert
-		$('#modal-alert').iziModal({
-		  headerColor: '#d43838',
-		  width: 400,
-		  timeout: 10000,
-		  pauseOnHover: true,
-		  timeoutProgressbar: true, 
-		  attached: 'bottom' 
-		});
-		$(document).on('click', '.open-alert', function (event) {
-		  event.preventDefault();
-		  $('#modal-alert').iziModal('open');
-		});
-
-
 
     </script>
  
